@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import CardTest from '@/components/CardTest.vue'
+import CardTest from '@/components/Test/CardTest.vue'
 
 export default {
   name: 'HomeView',

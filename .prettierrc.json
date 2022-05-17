@@ -7,7 +7,7 @@
   "arrowParens": "always",
   "jsxSingleQuote": true,
   "quoteProps": "as-needed",
-  "trailingComma": "noneS",
+  "trailingComma": "none",
   "bracketSpacing": true,
   "jsxBracketSameLine": true,
   "attributeGroups": ["$DEFAULT", "^data-"],

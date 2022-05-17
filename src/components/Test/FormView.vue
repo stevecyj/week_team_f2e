@@ -20,10 +20,12 @@
           class="form-control"
           placeholder="請輸入 Email"
           rules="email|required"
+          :class="{ 'is-invalid': errors['email'] }"
         ></v-field>
-        <error-message name="email"></error-message>
-        <span class="invalid-feedback">
-        </span>
+        <error-message
+          name="email"
+          class="invalid-feedback"
+        ></error-message>
       </div>
 
       <div class="mb-3">
@@ -52,8 +54,13 @@
           type="text"
           class="form-control"
           placeholder="請輸入電話"
+          :rules="isPhone"
+          :class="{ 'is-invalid': errors['電話'] }"
         ></v-field>
-        <span class="invalid-feedback"></span>
+        <error-message
+          name="電話"
+          class="invalid-feedback"
+        ></error-message>
       </div>
 
       <div class="mb-3">
@@ -120,7 +127,7 @@ export default {
     },
     isPhone(value) {
       const phoneNumber = /^(09)[0-9]{8}$/
-      return phoneNumber.test(value) ? true : '需要正確的電話號碼'
+      return phoneNumber.test(value) ? true : '需要正確的手機號碼'
     }
   },
   created() {

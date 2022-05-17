@@ -8,7 +8,7 @@
     type="button"
     class="btn btn-primary"
   >Primary</button>
-
+  {{name}}
 </template>
 
 <script>

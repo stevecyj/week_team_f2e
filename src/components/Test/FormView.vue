@@ -15,6 +15,7 @@
         >Email</label>
         <v-field
           id="email"
+          v-model="user.email"
           name="email"
           type="email"
           class="form-control"
@@ -50,6 +51,7 @@
         >電話</label>
         <v-field
           id="phone"
+          v-model="user.phone"
           name="電話"
           type="text"
           class="form-control"
@@ -117,7 +119,7 @@ export default {
   },
   methods: {
     onSubmit(value) {
-      console.log(value)
+      console.log(this.user)
     },
     isRequired(value) {
       if (!value) {

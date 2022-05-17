@@ -19,9 +19,11 @@
           type="email"
           class="form-control"
           placeholder="請輸入 Email"
-          :rules="isRequired"
+          rules="email|required"
         ></v-field>
-        <span class="invalid-feedback"></span>
+        <error-message name="email"></error-message>
+        <span class="invalid-feedback">
+        </span>
       </div>
 
       <div class="mb-3">
@@ -107,8 +109,8 @@ export default {
     }
   },
   methods: {
-    onSubmit() {
-      console.log(this.user)
+    onSubmit(value) {
+      console.log(value)
     },
     isRequired(value) {
       if (!value) {

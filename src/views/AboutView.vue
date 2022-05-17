@@ -1,18 +1,18 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
-    <CardTest />
+    <FormView />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import CardTest from '@/components/Test/CardTest.vue'
+import FormView from '@/components/Test/FormView.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    CardTest
+    FormView
   }
 }
 </script>

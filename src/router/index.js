@@ -18,7 +18,17 @@ const routes = [
   {
     path: '/newpage',
     name: 'newpage',
-    component: () => import(/* webpackChunkName: "newpage" */ '../views/NewPage.vue')
+    component: () => import(/* webpackChunkName: "newpage" */ '../views/NewPage.vue'),
+    children: [
+      {
+        path: 'a',
+        component: () => import(/* webpackChunkName: "a" */ '../components/Test/ComponentA.vue')
+      },
+      {
+        path: 'b',
+        component: () => import(/* webpackChunkName: "b" */ '../components/Test/ComponentB.vue')
+      }
+    ]
   }
 ]
 

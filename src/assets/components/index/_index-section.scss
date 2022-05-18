@@ -1,0 +1,19 @@
+ul {
+  list-style-type: none;
+  span {
+    z-index: 1000;
+  }
+}
+
+// @media (min-width: 576px) {
+//   .slogan-item-1,
+//   .slogan-item-2,
+//   .slogan-item-3 {
+//     border-right: 1px solid #ebebeb;
+//   }
+
+//   .slogan-item-1,
+//   .slogan-item-2 {
+//     border-bottom: 0px;
+//   }
+// }

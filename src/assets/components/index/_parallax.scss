@@ -1,0 +1,33 @@
+.parallax {
+  background-image: url('https://images.unsplash.com/photo-1572195577046-2f25894c06fc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80');
+  background-color: lighten($king, 30%);
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+  background-position: right bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 350px;
+
+  // &:before {
+  //   content: '';
+  //   background: $primary;
+  //   width: 100%;
+  //   opacity: 0.5;
+  // }
+  @include media-breakpoint-down(sm) {
+    height: 250px;
+    background-position: -355px 50px;
+  }
+  // .text {
+  //   font-size: 16px;
+  //   @include media-breakpoint-up(sm) {
+  //     font-size: 24px;
+  //   }
+  // }
+  // .title {
+  //   font-size: 18px;
+  //   @include media-breakpoint-up(sm) {
+  //     font-size: 28px;
+  //   }
+  // }
+}

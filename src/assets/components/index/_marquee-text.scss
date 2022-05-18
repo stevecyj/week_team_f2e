@@ -1,0 +1,30 @@
+.wrap {
+  overflow: hidden;
+}
+
+.content {
+  width: 100000px;
+}
+
+.marquee-text {
+  font-size: 3rem;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: marquee;
+  animation: marquee 10s linear alternate infinite;
+}
+
+@keyframes marquee {
+  // 0% {
+  //   transform: translate(100%, 0);
+  // }
+  // 100% {
+  //   transform: translate(-100%, 0);
+  // }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

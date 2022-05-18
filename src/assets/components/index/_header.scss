@@ -1,0 +1,115 @@
+.header {
+  // min-height: calc(
+  //   100vh - $navbar-brand-height - $navbar-padding-y - $nav-link-padding-y - $btn-padding-y
+  // );
+  min-height: 70vh;
+  @media (min-width: 576px) {
+    min-height: calc(
+      100vh - $navbar-brand-height - $navbar-padding-y - $nav-link-padding-y - $btn-padding-y
+    );
+  }
+}
+
+.font-display {
+  font-size: calc(1.375rem + 1.5vw);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.btn-shop {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  cursor: pointer;
+  background: url(https://cdn.shopify.com/s/files/1/0567/9582/4303/files/seal-bg.png?v=1621100910);
+  display: flex;
+  align-items: center;
+  height: 90px;
+  width: 90px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 28px 28px;
+  border: none;
+  font-weight: 700;
+  transform: rotate(-20deg);
+  transition: 0.3s ease all;
+  span {
+    color: white;
+    z-index: 10;
+  }
+
+  &:hover {
+    transform: rotate(0deg);
+    scale: 1.1;
+    color: #fff !important;
+  }
+
+  &:active {
+    opacity: 0.75;
+  }
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.vertical-lr {
+  writing-mode: vertical-lr;
+}
+
+p {
+  line-height: 0px;
+}
+
+.hero_text_wrapper {
+  &:before {
+    content: 'burgers';
+    display: block;
+    writing-mode: vertical-rl;
+    position: absolute;
+    top: 40%;
+    left: -18px;
+    margin: 0px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 99;
+    @media (min-width: 576px) {
+      font-size: 4rem;
+      left: -24px;
+    }
+  }
+
+  &:after {
+    content: 'delicious';
+    display: block;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 40%;
+    right: -18px;
+    margin: 0px;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    z-index: 99;
+    @media (min-width: 576px) {
+      font-size: 4rem;
+      right: -24px;
+    }
+  }
+}

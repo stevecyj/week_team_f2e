@@ -1,0 +1,44 @@
+@import '~bootstrap/scss/functions'; // 載入 function
+@import './variables'; // 載入 helpers 裡的變數(自定義)
+@import './utilities'; // 載入 helpers 裡的 utilties(自定義)
+
+$utilities: map-merge(
+  $utilities,
+  (
+    'border':
+      map-merge(
+        map-get($utilities, 'border'),
+        (
+          responsive: true,
+        )
+      ),
+    'border-top':
+      map-merge(
+        map-get($utilities, 'border-top'),
+        (
+          responsive: true,
+        )
+      ),
+    'border-end':
+      map-merge(
+        map-get($utilities, 'border-end'),
+        (
+          responsive: true,
+        )
+      ),
+    'border-bottom':
+      map-merge(
+        map-get($utilities, 'border-bottom'),
+        (
+          responsive: true,
+        )
+      ),
+    'border-start':
+      map-merge(
+        map-get($utilities, 'border-start'),
+        (
+          responsive: true,
+        )
+      ),
+  )
+);

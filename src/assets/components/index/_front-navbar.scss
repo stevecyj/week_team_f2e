@@ -1,0 +1,57 @@
+.mobile-nav-item {
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 20px;
+    right: 20px;
+    border-bottom: 1px solid;
+    border-bottom-color: #fff;
+  }
+}
+
+.disappear-animation {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.appear-animation {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.appear-delay-3 {
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.28s,
+    opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.38s;
+}
+
+.appear-delay-4 {
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.34s,
+    opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.44s;
+}
+
+.appear-delay-5 {
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.4s,
+    opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.5s;
+}
+
+.appear-delay-6 {
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.46s,
+    opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.56s;
+}
+
+.appear-delay-7 {
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.52s,
+    opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.62s;
+}
+
+.appear-delay-8 {
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.58s,
+    opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.68s;
+}
+
+.appear-delay-9 {
+  transition: transform 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.64s,
+    opacity 1s cubic-bezier(0.165, 0.84, 0.44, 1) 0.74s;
+}

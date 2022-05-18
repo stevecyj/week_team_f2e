@@ -13,20 +13,40 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    component: () => import('../views/AboutView.vue')
   },
   {
     path: '/newpage',
     name: 'newpage',
-    component: () => import(/* webpackChunkName: "newpage" */ '../views/NewPage.vue'),
+    component: () => import('../views/NewPage.vue'),
     children: [
       {
         path: 'a',
-        component: () => import(/* webpackChunkName: "a" */ '../components/Test/ComponentA.vue')
+        component: () => import('../components/Test/ComponentA.vue')
       },
       {
         path: 'b',
-        component: () => import(/* webpackChunkName: "b" */ '../components/Test/ComponentB.vue')
+        component: () => import('../components/Test/ComponentB.vue')
+      },
+      {
+        path: 'namedView',
+        component: () => import('../components/Test/NameView.vue'),
+        children: [
+          {
+            path: 'c2a',
+            components: {
+              left: () => import('../components/Test/ComponentC.vue'),
+              right: () => import('../components/Test/ComponentA.vue')
+            }
+          },
+          {
+            path: 'a2c',
+            components: {
+              left: () => import('../components/Test/ComponentA.vue'),
+              right: () => import('../components/Test/ComponentC.vue')
+            }
+          }
+        ]
       }
     ]
   }

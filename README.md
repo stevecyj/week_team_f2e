@@ -1,5 +1,9 @@
 # week_team_f2e
 
+## Demo
+
+[demo page](https://stevecyj.github.io/week_team_f2e/#/)
+
 ## Project setup
 
 ### 如果出現 install error

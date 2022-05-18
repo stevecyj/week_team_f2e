@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkweek_team_f2e"]=self["webpackChunkweek_team_f2e"]||[]).push([[996],{2996:function(e,n,t){function r(e,n){return" 元件 B "}t.r(n),t.d(n,{default:function(){return c}});var u=t(89);const f={},a=(0,u.Z)(f,[["render",r]]);var c=a}}]);
+//# sourceMappingURL=996.d74ab2d5.js.map

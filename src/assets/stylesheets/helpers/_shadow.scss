@@ -1,0 +1,8 @@
+.shadow {
+  &-black {
+    box-shadow: -1px 2px 0px $black;
+  }
+  &-gray {
+    box-shadow: -8px 8px 0px #00040029;
+  }
+}

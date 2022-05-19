@@ -2,14 +2,11 @@
 @import './helpers/variables'; // 載入 helpers 裡的變數(自定義)
 @import './helpers/utilities'; // 載入 helpers 裡的 utilties(自定義)
 @import '~bootstrap/scss/mixins';
-
+@import '~bootstrap/scss/bootstrap'; // 載入所有的 bootstrap 相關的 scss
 @import './helpers/enable-responsive'; // 載入 helpers 裡的 enable-responsive(自定義)
 
-// components
-// index
-@import '../components/index/index-view'; // 載入 index view
-
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap');
-@import './base.scss'; // 載入 base.scss
-
-@import '~bootstrap/scss/bootstrap'; // 載入所有的 bootstrap 相關的 scss
+@import 'helpers/shadow';
+@import 'helpers/hover';
+@import 'helpers/active';
+@import 'base/base';
+@import 'pages/custom';
